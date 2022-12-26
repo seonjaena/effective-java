@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://mariadb-ver10-01.c3edzk8fothj.ap-northeast-2.rds.amazonaws.com:3306/EFFECTIVE_JAVA?characterEncoding=UTF-8&serverTimezone=Asia/Seoul&useUnicode=true
+    username: admin
+    password: Na6080su12!!
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: validate
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        default_batch_fetch_size: 100
+        show_sql: true
+    open-in-view: false
